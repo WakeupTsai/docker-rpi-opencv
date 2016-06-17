@@ -1,4 +1,5 @@
-FROM sdhibit/rpi-raspbian
+FROM jsurf/rpi-raspbian:latest
+RUN [ "cross-build-start" ]
 RUN apt-get update && apt-get install -y \
         libjpeg62 \
         libtiff4 \
